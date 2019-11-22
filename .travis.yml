@@ -1,4 +1,8 @@
 language: java
 jdk: oraclejdk11
 
-after_success: echo "I´m done"; uname -a
+before_install: 
+  - mysql -e "CREATE DATABASE IF NOT EXIST TEST;"
+
+after_success: 
+  - echo "Hecho"
