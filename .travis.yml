@@ -2,10 +2,9 @@ language: java
 jdk: oraclejdk11
 
 services: 
- - mysql
+- mysql
 
-before_install: 
-  - mysql -e "CREATE DATABASE IF NOT EXIST TEST;"
+before_install:
+- mysql -e "CREATE DATABASE IF NOT EXIST TEST;"
 
-after_success: 
-  - mysql -e "SHOW DATABASES;"
+after_success: mysql -e "SHOW DATABASES;"
