@@ -5,6 +5,6 @@ services:
 - mysql
 
 before_install:
-- mysql -e "CREATE DATABASE IF NOT EXIST TEST;"
+- mysql -e "CREATE DATABASE IF NOT EXITS TEST;"
 
 after_success: mysql -e "SHOW DATABASES;"
